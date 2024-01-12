@@ -1,0 +1,5 @@
+<div id="rightSide" cdkDropList (cdkDropListDropped)="onDrop($event)">
+    <div *ngFor="let option of options.right; let i = index" cdkDrag [innerHTML]="option.value.body"
+        [cdkDragData]="option" cdkDragBoundary="#rightSide">
+    </div>
+</div>
